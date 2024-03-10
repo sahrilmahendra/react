@@ -5,7 +5,8 @@ import Intro from './components/intro';
 function App() {
   return (
     <div>
-      <Intro/>
+      <Intro name='Syahryil'/>
+      <Intro name='Mahendra'/>
     </div>
   );
 }
