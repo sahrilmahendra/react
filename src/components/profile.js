@@ -1,12 +1,14 @@
 import React from "react";
 
 class Profile extends React.Component {
+    constructor(props){
+        super(props)
+    }
     render() {
         return (
             <div>
-                <h1>
-                    Test from Class Component
-                </h1>
+                <h1>from class component</h1>
+                {this.props.profile()}
             </div>
         )
     }

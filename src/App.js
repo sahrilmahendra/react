@@ -7,14 +7,32 @@ import Navbar from './components/navbar';
 import Footer from './components/footer';
 
 function App() {
+  const myName = 'Sahril Mahendra';
+  const navbarText = 'Help';
+  const lang = 'React JS';
+  const names = myName.split(" ");
+
+  const clicked = () => {
+    return alert("button clicked")
+  }
+
+  const profile = () => {
+    return (
+    <div>
+      <h1>Profile</h1>
+      <marquee>test profile</marquee>
+    </div>
+    )
+  }
+
   return (
     <div>
-      <Navbar/>
-      <Intro name='Syahryil' lang='React JS'/>
-      <Intro name='Mahendra' lang='React JS'/>
+      <Navbar text={navbarText}/>
+      <Intro name={names[0]} lang={lang}/>
+      <Intro name={names[1]} lang={lang}/>
 
-      <Profile/>
-      <Button/>
+      <Profile profile={profile}/>
+      <Button click={clicked}/>
       <Footer/>
     </div>
   );

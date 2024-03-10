@@ -1,7 +1,9 @@
-function Button() {
+function Button(props) {
     return (
       <div>
-        <button>Click Me</button>
+        <button onClick = {() => props.click()}>
+            Click Me
+        </button>
       </div>
     );
   }
